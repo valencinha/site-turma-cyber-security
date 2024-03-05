@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FemTechShield</title>
+  <!-- Adicione o link para os estilos Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    #backToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+    }
+    
+    /* Mostrar o botão apenas quando o usuário rolar para baixo */
+    @media (min-width: 768px) {
+      #backToTopBtn {
+        display: block;
+      }
+    }
+    </style>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa; /* Cor de fundo padrão do Bootstrap */
+    }
+    /* Estilo do cabeçalho */
+    header {
+      background-color: #e0a3d4; /* Rosa bebê */
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 {
+      color: white;
+      font-size: 24px;
+    }
+    /* Estilo do menu responsivo */
+    nav {
+      background-color: #f8f9fa; /* Cor de fundo padrão do Bootstrap */
+    }
+    nav a {
+      color: #495057; /* Cor de texto padrão do Bootstrap */
+    }
+    nav a:hover {
+      color: #e0a3d4; /* Rosa bebê */
+    }
+    /* Estilo do corpo da página */
+    .container {
+      margin-top: 20px;
+    }
+    /* Estilo do rodapé */
+    footer {
+      background-color: #e0a3d4; /* Rosa bebê */
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    footer p {
+      color: white;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="custom-header">
+    <h1 class="custom-font">FemTechShield</h1>
+  </header>
+
+  <!-- Menu Responsivo -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#about">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ceos">CEOs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav><br><br>
+
+  <!-- Corpo da Página -->
+  <div class="container container-fluid">
+    <!-- Sessão Sobre -->
+    <section class="container-fluid" id="about">
+      <h2>Sobre nós</h2><br>
+      <p>Bem-vindos à FemTechShield, uma empresa pioneira de tecnologia estabelecida no vibrante coração de Recife, Pernambuco. Fundada por um grupo de mulheres apaixonadas por tecnologia, nossa missão é transformar o cenário da indústria de tecnologia, promovendo a inclusão feminina e fortalecendo a segurança cibernética.
+    </p>
+    <p>Na FemTechShield, acreditamos que a diversidade é a força propulsora da inovação. Nosso compromisso com a inclusão vai além das palavras, refletindo-se em programas de treinamento e capacitação projetados especificamente para mulheres que desejam ingressar e prosperar no mundo da tecnologia.</p>
+    <p>Além de capacitar mulheres em suas carreiras tecnológicas, também nos dedicamos a fortalecer a cibersegurança. Oferecemos consultoria especializada para garantir que empresas estejam protegidas contra ameaças cibernéticas, ao mesmo tempo em que promovemos práticas seguras na era digital.</p>
+      <!-- Adicione mais informações conforme necessário -->
+    </section><br><br>
+
+<!-- Sessão CEOs -->
+<section class="container" id="ceos">
+    <h2 class="text-center mb-4">Conheça nossas CEOs:</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="img/meduarda.jpeg" class="card-img-top" alt="foto Maria Eduarda">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Maria Eduarda - Fundadora e CEO:</h5>
+            <p class="card-text">Maria Eduarda é a visionária fundadora e CEO da FemTechShield. Com uma carreira sólida na área de tecnologia, ela lidera a empresa com paixão e dedicação. Sua visão inclui capacitar mulheres na tecnologia e fortalecer a cibersegurança, moldando o futuro do setor com inclusão e inovação.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="img/Louyse.jpeg" class="card-img-top" alt="Foto Louyse Macedo">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Louyse - Diretora de Desenvolvimento:</h5>
+            <p class="card-text">Louyse, a talentosa Diretora de Desenvolvimento, lidera a equipe de tecnologia da FemTechShield. Com sua expertise em programação e design, ela transforma ideias em soluções práticas e intuitivas. Seu compromisso com a excelência impulsiona a inovação constante na empresa.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="img/Camile.jpeg" class="card-img-top" alt="foto Camile">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Camile - Especialista em Cibersegurança:</h5>
+            <p class="card-text">Camile, a especialista em cibersegurança, é a guardiã digital da FemTechShield. Com uma profunda compreensão das ameaças cibernéticas, ela desenvolve estratégias robustas para proteger dados e sistemas.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="img/rosana.jpeg" class="card-img-top" alt="Foto da Rosana">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Rosana - Diretora de Inclusão e Diversidade:</h5>
+            <p class="card-text">Rosana desempenha um papel vital como Diretora de Inclusão e Diversidade na FemTechShield. Sua paixão pela igualdade de gênero na tecnologia inspira iniciativas que capacitam mulheres a prosperar no setor. Ela lidera programas de treinamento e eventos para criar um ambiente inclusivo e acolhedor na empresa e na comunidade.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><br><br>
+
+      <section  class="container-fluid" id="about">
+        <p>Cada uma dessas mulheres desempenha um papel fundamental na FemTechShield, unindo suas habilidades e paixões para impulsionar a empresa em direção a um futuro mais inclusivo e seguro.
+      </p>
+      </section>
+      
+
+
+    </section><br><br>
+
+<!-- Sessão Contato -->
+<section class="container-fluid" id="contact" style="margin-left: 0; margin-right: 0;">
+    <h2>Contato</h2>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputName">Nome</label>
+          <input type="text" class="form-control" id="inputName" placeholder="">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="email@xyz.com">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputMessage">Comentário</label>
+        <textarea class="form-control" id="inputMessage" rows="4" placeholder=""></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+    </form>
+
+    <button id="backToTopBtn" class="btn btn-light" onclick="topFunction()" title="Voltar ao Topo">
+        Início
+    </button>
+</section><br><br><br><br>
+
+<button id="backToTopBtn" class="btn btn-light" onclick="topFunction()" title="Voltar ao Topo">
+    Início
+</button>
+
+<section>
+  <!-- Rodapé -->
+  <footer class="container-fluid">
+    <p>&copy; 2024 FemTechShield. Todos os direitos reservados.</p>
+  </footer>
+</section>
+
+
+  <!-- Adicione os scripts necessários do Bootstrap e jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    
+      // Remover o foco do botão após 100 milissegundos (0.1 segundos)
+      setTimeout(function() {
+        document.getElementById('backToTopBtn').blur();
+      }, 100);
+    }
+    </script>
+
+
+
+</body>
+</html>
